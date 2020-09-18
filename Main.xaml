@@ -48,7 +48,7 @@
       <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="376,237" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap:VirtualizedContainerService.HintSize="376,338" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="AttachmentPath" />
     </Sequence.Variables>
@@ -60,11 +60,10 @@
     <ui:SendOutlookMail Account="{x:Null}" Bcc="{x:Null}" MailMessage="{x:Null}" TimeoutMS="{x:Null}" Body="Hola you have recieved this email via automation" Cc="r.kolanjiyappan@accenture.com" DisplayName="Send Outlook Mail Message" sap:VirtualizedContainerService.HintSize="334,145" sap2010:WorkflowViewState.IdRef="SendOutlookMail_1" IsBodyHtml="False" IsDraft="False" Subject="Testing on email automation" To="priyangha.pasupathy@accenture.com;r.kolanjiyappan@accenture.com">
       <ui:SendOutlookMail.Files>
         <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
-          <InArgument x:TypeArguments="x:String">
-            <Literal x:TypeArguments="x:String">attachment\nightshift.xlsx</Literal>
-          </InArgument>
+          <InArgument x:TypeArguments="x:String">attachment\nightshift.xlsx</InArgument>
         </scg:List>
       </ui:SendOutlookMail.Files>
     </ui:SendOutlookMail>
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,61" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="the automation is success and git integration is also success" />
   </Sequence>
 </Activity>
